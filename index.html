@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Catalog</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1>Product Catalog</h1>
+
+<div class="controls">
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search products..."
+  />
+
+  <select id="categoryFilter">
+    <option value="All">All Categories</option>
+    <option value="Gemstone">Gemstone</option>
+    <option value="Jewelry">Jewelry</option>
+    <option value="Loose Stone">Loose Stone</option>
+  </select>
+
+  <select id="sortSelect">
+  <option value="">Sort</option>
+  <option value="az">Name: A - Z</option>
+  <option value="za">Name: Z - A</option>
+  <option value="priceLow">Price: Low → High</option>
+  <option value="priceHigh">Price: High → Low</option>
+</select>
+
+  <input 
+  type="number" 
+  id="minPrice" 
+  placeholder="Min ₹" 
+/>
+
+<input 
+  type="number" 
+  id="maxPrice" 
+  placeholder="Max ₹" 
+/>
+  <button id="clearBtn">Clear</button>
+  <button id="viewToggle"> List View</button>
+
+
+</div>
+
+<div id="productList" class="grid"></div>
+
+<script src="index.js"></script>
+</body>
+</html>
